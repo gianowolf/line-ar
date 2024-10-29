@@ -1,0 +1,5 @@
+/build
+*.bin
+sdkconfig
+/__pycache__
+/venv

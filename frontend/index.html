@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-project-name">LineAr</span>
+        </div>
+        <div class="navbar-middle">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="navbar-right">
+            <a href="https://github.com/your-repository" target="_blank" class="github-link">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-logo">
+            </a>
+        </div>
+    </nav>
+
+  <div class="container">
+    <h1>Line Ar</h1>
+    <h2>Your Portable Drawing Robot</h2>
+
+    <div class="canvas-container">
+        <canvas id="drawingCanvas">
+        </canvas>
+    </div>
+
+    <!-- Loader GIF -->
+     <div class="loader-container" id="loader" style="display: none;">
+        <div class="loader-gif"></div>
+        <div class="loader-text">The robot is drawing...</div>
+     </div>
+
+
+    <div class="controls">
+        <button id="clearButton">Clear</button>
+        <button id="sendButton" class="button-primary">Send</button>
+        <button id="cancelButton" style="background-color: rgb(255, 8, 61); color: white;">Cancel</button>
+    </div>
+
+    <div class="switch-container">
+        <label for="realTimeSwitch">Real-time Drawing<input type="checkbox" id="realTimeSwitch">
+        </label>
+    </div>
+  </div>
+
+
+
+  <script src="app/scripts.js"></script>
+</body>
+</html>
